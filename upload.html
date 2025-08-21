@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Music</title>
+</head>
+<body>
+  <div class="upload-box">
+    <h2>Upload Your Music</h2>
+    <form>
+      <label for="title">Song Title</label>
+      <input type="text" id="title" placeholder="Enter song title" required>
+
+      <label for="artist">Artist Name</label>
+      <input type="text" id="artist" placeholder="Enter artist name" required>
+
+      <label for="genre">Genre</label>
+      <select id="genre" required>
+        <option value="">Select genre</option>
+        <option>Pop</option>
+        <option>Hip-Hop</option>
+        <option>Rock</option>
+        <option>Jazz</option>
+        <option>Electronic</option>
+      </select>
+
+      <label for="file">Upload File</label>
+      <input type="file" id="file" accept="audio/*" required>
+
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>
